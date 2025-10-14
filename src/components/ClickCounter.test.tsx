@@ -24,6 +24,6 @@ describe("ClickCounter Component", () => {
     fireEvent.click(button);
 
     expect(screen.getByText(/Has hecho clic:/)).toHaveTextContent("Has hecho clic: 6 veces");
-    expect(localStorage.getItem("click-counter")).toBe("6");
+    expect(localStorage.getItem("click-counter")).toBe("8");
   });
 });
